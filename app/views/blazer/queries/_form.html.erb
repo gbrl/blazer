@@ -13,7 +13,7 @@
       </div>
       <div class="form-group text-right">
         <div class="pull-left" style="margin-top: 9px;">
-          <%= link_to "Back", :back %>
+          <%# link_to "Back", :back %>
         </div>
         <%= link_to "Schema", "#", target: "_blank", id: "view-schema", style: "margin-right: 10px;" %>
         <%= f.select :data_source, Blazer.data_sources.values.map { |ds| [ds.name, ds.id] }, {}, class: ("hide" if Blazer.data_sources.size == 1), style: "width: 140px;" %>
